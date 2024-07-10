@@ -1,0 +1,139 @@
+body{
+    background-color: black;
+    padding:0px;
+    margin:0px;
+}
+
+.wrapper{
+    background-color:rgba(255, 252, 252, 0.938);
+    display:inline-grid;
+   
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    border-radius: 1px solid white;
+
+    width:100%;
+    height: 100vh;
+}
+
+.container1,
+.container2
+{
+   background-color: rgb(0, 0, 0);
+   margin: 5px;
+  padding: 10px;
+  border-radius: 40px;
+ 
+}
+.container1{
+    background-color: rgba(82,81,97,255);
+}
+.purple-container{
+    border: 2px red solid;
+    height:300px;
+    border-radius: 50px;
+}
+
+.face{
+    width: 310px;
+    height: 340px;
+    background-color: gold;
+    border-radius: 20px;
+    margin-left:2px;
+}
+
+.team{
+    width: 260px;
+    height: 340px;
+    background-color: darkolivegreen;
+    border-radius: 20px;
+}
+
+.oliver{
+    width: 300px;
+    height: 390px;
+    background-color: darkmagenta;
+    /* z-index: 1; */
+    position: absolute;
+    right: 0;
+    top: -4rem;
+    border:10px solid black;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.join{
+    width:470px;
+    height: 250px;
+    background-color: chartreuse;
+    border-radius: 25px;
+    margin-left:2px;
+}
+
+.social{
+    width:430px;
+    height: 250px;
+    background-color: blue;
+    border-radius: 25px;
+}
+.faceTeam{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.joinSocial{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.Navbar{
+    display: grid;
+    border-radius: 2px solid white;
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    gap: 5em;
+    /* width:100; */
+    margin:14px;
+    border-radius: 20px;
+}
+.Product{
+  background-color: purple;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.Story{
+    background-color: purple;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Features{
+    background-color: purple;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Contact{
+    background-color: purple;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Sign-up{
+    background-color: purple;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.logo{
+    background-color: beige;
+    border: 2px solid red;
+    width:200px;
+    height:100px;
+    border-radius: 20px;
+    margin:20px;
+}
+
