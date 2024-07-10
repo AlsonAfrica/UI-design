@@ -8,12 +8,20 @@ function Background() {
       </div>
       <div className="container2">
         <div className="purple-container">
+          <div></div>
           <div className="Navbar">
-            <div className="Product"></div>
-            <div className="Story"></div>
-            <div className="Features"></div>
-            <div className="Contact"></div>
-            <div className="Sign-up"></div>
+            <div className="Product">
+              <div className="product-text"><p>Product</p></div>
+            </div>
+            <div className="Story">
+            <div className="story-text"><p>Story</p></div>
+            </div>
+            <div className="Features">
+            <div className="features-text"><p>Features</p></div>
+            </div>
+            <div className="Contact"><div className="contact-text"><p>Contact</p></div>
+            </div>
+            <div className="Sign-up"><button>Sign Up</button></div>
           </div>
           <div className="background-image"></div>
         </div>
