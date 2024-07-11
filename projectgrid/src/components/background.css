@@ -1,141 +1,3 @@
-body{
-    background-color: black;
-    padding:0px;
-    margin:0px;
-}
-
-.wrapper{
-    /* background-color:rgba(255, 252, 252, 0.938); */
-    display:inline-grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    border-radius: 1px solid white;
-    width:100%;
-    height: 100vh;
-}
-
-.container1,
-.container2
-{
-   background-color: rgb(0, 0, 0);
-   margin: 5px;
-  padding: 10px;
-  border-radius: 40px;
- 
-}
-.container1{
-    background-color: rgba(82,81,97,255);
-}
-.purple-container{
-    border: 2px red solid;
-    height:300px;
-    border-radius: 50px;
-    background-color: aqua;
-}
-
-.face{
-    width: 310px;
-    height: 340px;
-    background-color: gold;
-    border-radius: 20px;
-    margin-left:2px;
-}
-
-.team{
-    width: 260px;
-    height: 340px;
-    background-color: darkolivegreen;
-    border-radius: 20px;
-}
-
-.oliver{
-    width: 300px;
-    height: 390px;
-    background-color: darkmagenta;
-    /* z-index: 1; */
-    position: absolute;
-    right: 0;
-    top: -4rem;
-    border:10px solid black;
-    border-radius: 20px;
-    margin-right: 10px;
-}
-
-.join{
-    width:470px;
-    height: 250px;
-    background-color: chartreuse;
-    border-radius: 25px;
-    margin-left:2px;
-}
-
-.social{
-    width:430px;
-    height: 250px;
-    background-color: blue;
-    border-radius: 25px;
-}
-.faceTeam{
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    position: relative;
-}
-
-.joinSocial{
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-.Navbar{
-    display: grid;
-    border-radius: 2px solid white;
-    background-color: aqua;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-    gap: 5em;
-    /* width:100; */
-    margin:14px;
-    border-radius: 20px;
-}
-.Product{
-  background-color: purple;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
-.Story{
-    background-color: purple;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-.Features{
-    background-color: purple;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-.Contact{
-    background-color: purple;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-.Sign-up{
-    background-color: purple;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-.logo{
-    background-color: beige;
-    border: 2px solid red;
-    width:200px;
-    height:100px;
-    border-radius: 20px;
-    margin:20px;
-}
-
 
 body{
     background-color: black;
@@ -150,7 +12,6 @@ body{
     gap: 1rem;
     border-radius: 1px solid white;
     width:100%;
-    height: 100vh;
 }
 
 .container1,
@@ -161,12 +22,17 @@ body{
    padding: 10px; */
    border-radius: 40px;
 }
+
 .container1{
     background-color: rgba(82,81,97,255);
+    margin: 10px;
+}
+.container2{
+    margin:7px;
 }
 .purple-container{
     /* border: 2px red solid; */
-    height:600px;
+    height:570px;
     border-radius: 50px;
     background-image: url("../assets/young-blonde-woman-with-yellow-sweater_273609-5541.jpg");
     background-position: center;
@@ -178,7 +44,7 @@ body{
     height: 300px;
     background-color: gold;
     border-radius: 20px;
-    margin-left:2px;
+    /* margin-left:2px; */
     background-image: url("../assets/young-female-with-dark-hair-pleading-about-something-keeping-palms-up-looking-up-isolated-rosy-background-woman-begging-something-long-awaited_176532-10539.jpg");
     background-image: center;
     background-size: cover;
@@ -187,14 +53,17 @@ body{
 .team{
     width: 260px;
     height: 300px;
-    background-color: darkolivegreen;
+    background-color: grey;
     border-radius: 20px;
 }
 
 .oliver{
     width: 300px;
     height: 350px;
-    background-color: darkmagenta;
+    background-color: rgb(19, 68, 173);
+    background-image: url("../assets/360_F_712811611_i2gBun5vXwTpbD0pvruyN9s3Xacvpzlk-removebg-preview.png");
+    background-image: center;
+    background-size: cover;
     /* z-index: 1; */
     position: absolute;
     right: 0;
@@ -205,11 +74,14 @@ body{
 }
 
 .join{
-    width:470px;
-    height: 250px;
+    width:100%;
+    height: 100%px;
     background-color: chartreuse;
     border-radius: 25px;
     margin-left:2px;
+    /* display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; */
 }
 
 .social{
@@ -249,6 +121,7 @@ body{
 .Product p {
     color:rgb(14, 14, 14);
     font-size: 20px;
+    font-weight: bold;
 }
 .Story{
     /* background-color: purple; */
@@ -259,6 +132,7 @@ body{
 .Story p{
     color:rgb(14, 14, 14);
     font-size: 20px;
+    font-weight: bold;
 }
 .Features{
     /* background-color: purple; */
@@ -269,6 +143,7 @@ body{
 .Features p{
     color:rgb(14, 14, 14);
     font-size: 20px;
+    font-weight: bold;
 }
 .Contact{
     /* background-color: purple; */
@@ -279,6 +154,7 @@ body{
 .Contact p{
     color:rgb(14, 14, 14);
     font-size: 20px;
+   font-weight: bold;
 }
 .Sign-up{
     background-color: rgb(238, 234, 238);
@@ -306,4 +182,108 @@ body{
     border-radius: 20px;
     margin:20px;
 }
+.collaborate{
+    height:200px;
+    width:300px;
+    /* background-color: rgb(148, 95, 95); */
+    position:absolute;
+    right:100px;
+    top:150px;
+    border-style:dotted;
+    
+    
+}
+.collaborate h1{
+    font-size: 45px;
+    /* padding:0px;
+    margin:0px; */
+    font-family:sans-serif ;
+    font-weight: 100;
+}
+.collaborate h2{
+    font-size: 30px;
+}
+/* .collaborate h2{} */
+.collaborate span{
+    padding-left:25px;
+    padding-top: 20px;
+}
+.button-collab{
+    padding-left:25px;
+    padding-top:20px;
+    font-size: 20px;
+    
+}
+.button-collab button{
+    height:50px;
+    width:100px;
+    font-size: 15px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+}
+.Our-team p{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline 1px brown;
+}
+.Our-team{
+    margin-top:40px;
 
+}
+.Team{
+    color:brown;
+}
+.Lea{
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.Lea p{
+   text-align:center;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:white;
+}
+
+.Lea span{
+    display: block;
+    font-size: 20px;
+    font-family:sans-serif;
+    padding-right:60px;
+    color:white;
+}
+.liver-text p{
+    font-size: 30px;
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-left: 20px;
+  
+}
+.liver-text span{
+    display:block;
+    color:white;
+    font-size:20px;
+}
+/* .Join-box{
+    border:2px black solid;
+    height:100px;
+    background-color: darkslateblue;
+    border-radius:20px;
+    width:40%px;
+} */
+ /* .Join-box{
+    background-color: #f44336;
+    padding: 20px;
+    text-align: center;
+ }
+ .Join-button{
+    background-color: #f44336;
+    padding: 20px;
+    text-align: center;
+ }
+ .Social-media{
+    background-color: #f44336;
+    padding: 20px;
+    text-align: center;
+ } */
