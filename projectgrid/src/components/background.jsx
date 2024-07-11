@@ -4,7 +4,13 @@ function Background() {
     <div className="wrapper">
       <div className="container1">
         <div className="logo"></div>
-        <div className="Text"></div>
+        <div className="Text-Container">
+          <p><span>Teams Together</span>Bring your team together Right here.<span>The quick brown fox jumps over <span>the lazy dog</span></span>
+          <button className="Learn-btn">Learn how</button>
+          </p>
+          
+        
+        </div>
       </div>
       <div className="container2">
         <div className="purple-container">
@@ -48,17 +54,25 @@ function Background() {
             <div className="liver-photo"></div>
           </div>
         </div>
+
         <div className="joinSocial">
           <div className="join">  
-            <div className="Join-box"></div>
-            <div className="Join-button"></div>
-            <div className="Social-media"></div>
+            <div className="Join-box">
+              <div class="Join-Text"><p>Join us if you<span>want!</span></p></div>
+            </div>
+            <div className="Join-button">
+              <div><button class="Social-btn">Join Now</button></div>
+            </div>
+            <div className="Social-media">
+              <div class="Learn"><p>Learn How!</p></div>
+            </div>
           
           </div>
           <div className="social"></div>
         </div>
       </div>
     </div>
+
   );
 }
 export default Background;

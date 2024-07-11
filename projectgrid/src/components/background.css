@@ -1,289 +1,329 @@
-
-body{
+/* Ensure no horizontal scrolling */
+html, body {
     background-color: black;
-    padding:0px;
-    margin:0px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.wrapper{
-    /* background-color:rgba(255, 252, 252, 0.938); */
-    display:inline-grid;
+.wrapper {
+    display: inline-grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    border-radius: 1px solid white;
-    width:100%;
+    width: 100%;
 }
 
 .container1,
-.container2
-{
-   background-color: rgb(0, 0, 0);
-   /* margin: 5px;
-   padding: 10px; */
-   border-radius: 40px;
+.container2 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
 }
 
-.container1{
-    background-color: rgba(82,81,97,255);
+.container1 {
+    background-color: rgba(82, 81, 97, 255);
     margin: 10px;
 }
-.container2{
-    margin:7px;
+
+.container2 {
+    margin: 7px;
 }
-.purple-container{
-    /* border: 2px red solid; */
-    height:570px;
+
+.purple-container {
+    height: 570px;
     border-radius: 50px;
     background-image: url("../assets/young-blonde-woman-with-yellow-sweater_273609-5541.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.face{
+.face {
     width: 310px;
     height: 300px;
     background-color: gold;
     border-radius: 20px;
-    /* margin-left:2px; */
     background-image: url("../assets/young-female-with-dark-hair-pleading-about-something-keeping-palms-up-looking-up-isolated-rosy-background-woman-begging-something-long-awaited_176532-10539.jpg");
-    background-image: center;
+    background-position: center;
     background-size: cover;
 }
 
-.team{
-    width: 260px;
+.team {
+    width: 230px;
     height: 300px;
     background-color: grey;
     border-radius: 20px;
 }
 
-.oliver{
-    width: 300px;
+.oliver {
+    width: 290px;
     height: 350px;
     background-color: rgb(19, 68, 173);
     background-image: url("../assets/360_F_712811611_i2gBun5vXwTpbD0pvruyN9s3Xacvpzlk-removebg-preview.png");
-    background-image: center;
+    background-position: center;
     background-size: cover;
-    /* z-index: 1; */
     position: absolute;
     right: 0;
     top: -4rem;
-    border:10px solid black;
+    border: 10px solid black;
     border-radius: 20px;
     margin-right: 10px;
 }
 
-.join{
-    width:100%;
-    height: 100%px;
-    background-color: chartreuse;
+.join {
+    width: 100%;
+    height: 250px;
     border-radius: 25px;
-    margin-left:2px;
-    /* display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "Join-box Join-box Join-box Join-box"
+        "Join-box Join-box Join-box Join-box"
+        "Join-button Join-button Social-media Social-media";
+    gap: 1px;
 }
 
-.social{
-    width:430px;
+.social {
+    width: 100%;
     height: 250px;
     background-color: blue;
     border-radius: 25px;
 }
-.faceTeam{
+
+.faceTeam {
     display: flex;
     gap: 10px;
     margin-top: 10px;
     position: relative;
 }
 
-.joinSocial{
+.joinSocial {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 1;
     margin-top: 10px;
 }
-.Navbar{
+
+.Navbar {
     display: grid;
-    /* background-color: aqua; */
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
     gap: 2em;
-    margin:12px;
     border-radius: 20px;
-    background-repeat: 0;
 }
-.Product{
-  /* background-color: purple; */
-  margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
 
-}
-.Product p {
-    color:rgb(14, 14, 14);
-    font-size: 20px;
-    font-weight: bold;
-}
-.Story{
-    /* background-color: purple; */
+.Product, .Story, .Features, .Contact {
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
 }
-.Story p{
-    color:rgb(14, 14, 14);
-    font-size: 20px;
-    font-weight: bold;
-}
-.Features{
-    /* background-color: purple; */
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-.Features p{
-    color:rgb(14, 14, 14);
-    font-size: 20px;
-    font-weight: bold;
-}
-.Contact{
-    /* background-color: purple; */
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-.Contact p{
-    color:rgb(14, 14, 14);
-    font-size: 20px;
-   font-weight: bold;
-}
-.Sign-up{
-    background-color: rgb(238, 234, 238);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    height:20px;
-    width:90px;
-    position:relative;
-    top:20px;
-    left:70px;
-    border-radius:37%;
-}
-.Sign-up button{
-    width:90px;
-    height:25px;
-    border-style: none;
 
+.Product p, .Story p, .Features p, .Contact p {
+    color: rgb(14, 14, 14);
+    font-size: 20px;
+    font-weight: bold;
 }
-.logo{
-    background-color: beige;
-    border: 2px solid red;
-    width:200px;
-    height:100px;
+
+.Sign-up {
+    margin: 1px;
+    padding: 2px;
+    border-radius: 5px;
+    height: 20px;
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+
+.Sign-up button {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
     border-radius: 20px;
-    margin:20px;
+    border: solid black 2px;
 }
-.collaborate{
-    height:200px;
-    width:300px;
-    /* background-color: rgb(148, 95, 95); */
-    position:absolute;
-    right:100px;
-    top:150px;
-    border-style:dotted;
-    
-    
+
+.collaborate {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    border-style: dotted;
 }
-.collaborate h1{
+
+.collaborate h1 {
     font-size: 45px;
-    /* padding:0px;
-    margin:0px; */
-    font-family:sans-serif ;
+    font-family: sans-serif;
     font-weight: 100;
 }
-.collaborate h2{
+
+.collaborate h2 {
     font-size: 30px;
 }
-/* .collaborate h2{} */
-.collaborate span{
-    padding-left:25px;
+
+.collaborate span {
+    padding-left: 25px;
     padding-top: 20px;
 }
-.button-collab{
-    padding-left:25px;
-    padding-top:20px;
+
+.button-collab {
+    padding-left: 25px;
+    padding-top: 20px;
     font-size: 20px;
-    
 }
-.button-collab button{
-    height:50px;
-    width:100px;
+
+.button-collab button {
+    height: 50px;
+    width: 100px;
     font-size: 15px;
     background-color: yellowgreen;
     border-radius: 20px;
 }
-.Our-team p{
+
+.Our-team {
+    margin-top: 40px;
+}
+
+.Our-team p {
     text-align: center;
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline 1px brown;
 }
-.Our-team{
-    margin-top:40px;
 
+.Team {
+    color: brown;
 }
-.Team{
-    color:brown;
-}
-.Lea{
+
+.Lea {
     padding-top: 30px;
     padding-right: 20px;
 }
-.Lea p{
-   text-align:center;
-   font-size: 35px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   color:white;
+
+.Lea p {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
-.Lea span{
+.Lea span {
     display: block;
     font-size: 20px;
-    font-family:sans-serif;
-    padding-right:60px;
-    color:white;
+    font-family: sans-serif;
+    padding-right: 60px;
+    color: white;
 }
-.liver-text p{
+
+.liver-text p {
     font-size: 30px;
     font-weight: 100;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     padding-left: 20px;
-  
 }
-.liver-text span{
-    display:block;
-    color:white;
-    font-size:20px;
+
+.liver-text span {
+    display: block;
+    color: white;
+    font-size: 20px;
 }
-/* .Join-box{
-    border:2px black solid;
-    height:100px;
-    background-color: darkslateblue;
-    border-radius:20px;
-    width:40%px;
+
+.Join-box {
+    background-color: #b77449;
+    grid-area: Join-box;
+    border-radius: 20px;
+}
+
+.Join-button {
+    background-color: #b77449;
+    grid-area: Join-button;
+    border-radius: 20px;
+}
+
+.Join-Text span {
+    display: block;
+}
+
+.Join-Text {
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.Join-Text p {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.Social-media {
+    background-color: #b77449;
+    grid-area: Social-media;
+    border-radius: 20px;
+}
+
+.Social-btn {
+    margin-left: 60px;
+    margin-top: 40px;
+    height: 29px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 80px;
+}
+
+.Social-btn button {
+    height: 400px;
+}
+
+.Learn {
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Container Left styling */
+
+.logo {
+    width: 50px;
+    height: 49px;
+    border-radius: 20px;
+    background-image: url("../assets/grafana_logo_icon_145223.png");
+    margin: 25px;
+}
+
+.Text-Container {
+    margin: 80px 25px;
+    display: float;
+}
+
+.Text-Container span {
+    display: block;
+    margin: 0px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Text-Container p {
+    display: block;
+    font-size: 130px;
+    margin-top: 20px;
+    color: white;
+}
+.Learn-btn{
+    width: 120px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin-bottom:200px;
+}
+
+/* .Learn-btn{
+    margin-top:100px;
 } */
- /* .Join-box{
-    background-color: #f44336;
-    padding: 20px;
-    text-align: center;
- }
- .Join-button{
-    background-color: #f44336;
-    padding: 20px;
-    text-align: center;
- }
- .Social-media{
-    background-color: #f44336;
-    padding: 20px;
-    text-align: center;
- } */
