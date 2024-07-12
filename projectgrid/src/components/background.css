@@ -19,14 +19,10 @@ html, body {
     border-radius: 40px;
 }
 
-.container1 {
-    background-color: rgba(82, 81, 97, 255);
-    margin: 10px;
-}
 
-.container2 {
+/* .container2 {
     margin: 7px;
-}
+} */
 
 .purple-container {
     height: 570px;
@@ -287,18 +283,70 @@ html, body {
 
 /* Container Left styling */
 
+.container1 {
+    background-color: rgba(82, 81, 97, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+
+}
+
+.Text-Container{
+    /* background-color: gray; */
+    height:70%;
+}
+.Footer{
+    /* background-color: rgb(252, 0, 0); */
+    height:30%;
+    width: 100%;
+    display:flex;
+    /* justify-content: end;
+    flex-direction: column; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* flex-direction:column; */
+}
+
+.text-footer{
+    /* background-color: rgb(177, 87, 169); */
+    width:50%;
+
+}
+.Image-footer{
+    background-color:yellow;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-text{
+   /* background-color: rgb(22, 185, 185); */
+    /* height:70%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap:3em;
+}
+
+ /* .text-footer{
+    display: flex;
+    flex-direction: row;
+    width:50%;
+}  */
+
 .logo {
-    width: 50px;
+    width: 30px;
     height: 49px;
     border-radius: 20px;
     background-image: url("../assets/grafana_logo_icon_145223.png");
     margin: 25px;
 }
 
-.Text-Container {
+ /* .Text-Container {
     margin: 80px 25px;
     display: float;
-}
+}  */
 
 .Text-Container span {
     display: block;
@@ -308,11 +356,21 @@ html, body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.Text-Container p {
+.Text-Container h1 {
     display: block;
-    font-size: 130px;
+    font-size: 5em;
     margin-top: 20px;
     color: white;
+    margin:0px;
+}
+
+.Text-Container p {
+    display: block;
+    font-size: .4em;
+    margin-top: 20px;
+    color: white;
+    margin:0px;
+    padding-top:6px;
 }
 .Learn-btn{
     width: 120px;
@@ -321,9 +379,36 @@ html, body {
     color: white;
     border-radius: 20px;
     border: none;
-    margin-bottom:200px;
-}
+    margin-bottom:10px;
+    margin-top:30px;
 
+} 
+.Image{
+    height:60%;
+    width:80%;
+    background-color: aqua;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  /* .Footer{
+    display:flex;
+    flex-direction: row;
+    background-color: azure;
+    gap:10px;  } */
+
+
+  
+                                                 
+
+/* .Image-footer{
+    background-color: rgb(128, 13, 13);
+    border-radius: 20%;
+    height: 200px; 
+    width: 35%; 
+    }
+
+     */
 /* .Learn-btn{
     margin-top:100px;
 } */
