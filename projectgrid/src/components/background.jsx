@@ -19,27 +19,24 @@ function Background() {
         <div className="Footer">
           <div className="Image-footer">
             <div className="Image"></div>
+            <div className="side-card"><div className="week"><p>Week 5</p></div><div className="mini-side-card"><div class="nine"><p><b>+9%</b></p></div></div></div>
           </div>
           <div className="text-footer">
+            <div className="footer-logo"></div>
+            <div className="Xpace">We're Xpace- <br/> Founded in <br/> London</div>
+            <div className="Light-footer">
+              <div className="lightfooter-logo"></div>
+              <div  className="lightfooter-text">A short message that will bring<br/> your customers into the world of<br/>your imagination</div>
+            </div>
+            <div className="story-footer">Learn our story</div>
 
           </div>
         </div>
       </div>
       <div className="container2">
         <div className="purple-container">
-          <div className="collaborate">
-            <h1>Collaborate</h1>
-            <h2>
-              <img alt="collaborate everywhere"></img>everywhere.
-            </h2>
-            {/* <div className="hand-everywhere">
-              
-            </div> */}
-            <span>Get our mobile free mobile application.</span>
-            <div className="button-collab">
-              <button>Download</button>
-            </div>
-          </div>
+          <div className="container-pic"></div>
+          <div className="collaborate"></div>
 
           <div className="Navbar">
             <div className="Product">
