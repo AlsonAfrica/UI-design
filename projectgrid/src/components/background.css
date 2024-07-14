@@ -147,14 +147,14 @@ html, body {
     border: solid black 2px;
 }
 
-.collaborate {
-    /* height: 200px;
+/* .collaborate {
+    height: 200px;
     width: 300px;
     position: absolute;
     right: 100px;
     top: 150px;
-    border-style: dotted; */
-}
+    border-style: dotted;
+} */
 
 .collaborate h1 {
     font-size: 45px;
