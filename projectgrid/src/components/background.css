@@ -1,536 +1,118 @@
-/* Ensure no horizontal scrolling */
-html, body {
+ /* view port reset */
+ *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+ }
+ /* b */
+
+ .wrapper{
     background-color: black;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-.wrapper {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    width: 100%;
-}
-
-.container1,
-.container2 {
-    background-color: rgb(0, 0, 0);
-    border-radius: 40px;
-}
-
-
-/* .container2 {
-    margin: 7px;
-} */
-
-.purple-container {
-    height: 570px;
-    border-radius: 50px;
-    background-color: fuchsia;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    /* background-image: url("../assets/young-blonde-woman-with-yellow-sweater_273609-5541.jpg");
-    background-position: center;
-    background-size: cover; */
-}
-/* .container-pic{
-    background-color: navy;
-    width:20%;
-    height:20px;
-} */
-
-.face {
-    width: 310px;
-    height: 300px;
-    background-color: gold;
-    border-radius: 20px;
-    background-image: url("../assets/young-female-with-dark-hair-pleading-about-something-keeping-palms-up-looking-up-isolated-rosy-background-woman-begging-something-long-awaited_176532-10539.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.team {
-    width: 230px;
-    height: 300px;
-    background-color: grey;
-    border-radius: 20px;
-}
-
-.oliver {
-    width: 290px;
-    height: 350px;
-    background-color: rgb(19, 68, 173);
-    background-image: url("../assets/360_F_712811611_i2gBun5vXwTpbD0pvruyN9s3Xacvpzlk-removebg-preview.png");
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    right: 0;
-    top: -4rem;
-    border: 10px solid black;
-    border-radius: 20px;
-    margin-right: 10px;
-}
-
-.join {
-    width: 100%;
-    height: 250px;
-    border-radius: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-        "Join-box Join-box Join-box Join-box"
-        "Join-box Join-box Join-box Join-box"
-        "Join-button Join-button Social-media Social-media";
-    gap: 1px;
-}
-
-.social {
-    width: 100%;
-    height: 250px;
-    background-color: #7a6061;
-    border-radius: 25px;
-}
-
-.faceTeam {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    position: relative;
-}
-
-.joinSocial {
+    height:100vh;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    flex: 1;
-    margin-top: 10px;
-}
-
-.Navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-    gap: 2em;
-    border-radius: 20px;
-}
-
-.Product, .Story, .Features, .Contact {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.Product p, .Story p, .Features p, .Contact p {
-    color: rgb(14, 14, 14);
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.Sign-up {
-    margin: 1px;
-    padding: 2px;
-    border-radius: 5px;
-    height: 20px;
-    position: relative;
-    top: 20px;
-    left: 70px;
-}
-
-.Sign-up button {
-    width: 100px;
-    height: 50px;
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-    border: solid black 2px;
-}
-
-/* .collaborate {
-    height: 200px;
-    width: 300px;
-    position: absolute;
-    right: 100px;
-    top: 150px;
-    border-style: dotted;
-} */
-
-.collaborate h1 {
-    font-size: 45px;
-    font-family: sans-serif;
-    font-weight: 100;
-}
-
-.collaborate h2 {
-    font-size: 30px;
-}
-
-.collaborate span {
-    padding-left: 25px;
-    padding-top: 20px;
-}
-
-.button-collab {
-    padding-left: 25px;
-    padding-top: 20px;
-    font-size: 20px;
-}
-
-.button-collab button {
-    height: 50px;
-    width: 100px;
-    font-size: 15px;
-    background-color: yellowgreen;
-    border-radius: 20px;
-}
-
-.Our-team {
-    margin-top: 40px;
-}
-
-.Our-team p {
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline 1px brown;
-}
-
-.Team {
-    color: brown;
-}
-
-.Lea {
-    padding-top: 30px;
-    padding-right: 20px;
-}
-
-.Lea p {
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-
-.Lea span {
-    display: block;
-    font-size: 20px;
-    font-family: sans-serif;
-    padding-right: 60px;
-    color: white;
-}
-
-.liver-text p {
-    font-size: 30px;
-    font-weight: 100;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    padding-left: 20px;
-}
-
-.liver-text span {
-    display: block;
-    color: white;
-    font-size: 20px;
-}
-
-.Join-box {
-    background-color: #b77449;
-    grid-area: Join-box;
-    border-radius: 20px;
-}
-
-.Join-button {
-    background-color: #b77449;
-    grid-area: Join-button;
-    border-radius: 20px;
-}
-
-.Join-Text span {
-    display: block;
-}
-
-.Join-Text {
-    margin-left: 60px;
-    margin-top: 40px;
-}
-
-.Join-Text p {
-    font-size: 30px;
-    font-weight: 100;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-
-.Social-media {
-    background-color: #b77449;
-    grid-area: Social-media;
-    border-radius: 20px;
-}
-
-.Social-btn {
-    margin-left: 60px;
-    margin-top: 40px;
-    height: 29px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    width: 80px;
-}
-
-.Social-btn button {
-    height: 400px;
-}
-
-.Learn {
-    margin-left: 30px;
-    margin-top: 40px;
-    font-size: 20px;
-    color: white;
-}
-
-/* Container Left styling */
-
-.container1 {
-    background-color: rgba(82, 81, 97, 255);
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px;
-
-}
-
-.Text-Container{
-    /* background-color: gray; */
-    height:70%;
-}
-.Footer{
-    /* background-color: rgb(252, 0, 0); */
-    height:32%;
-    width: 100%;
-    display:flex;
+    padding:10px;
     gap:10px;
-    margin-bottom: 20px;
-    
-  
-    
-    /* margin-left: 20px; */
-    /* margin-left: 20px; */
-    /* justify-content: end;
-    flex-direction: column; */
-    /* align-items: center; */
-    /* flex-direction: row; */
-    /* flex-direction:column; */
-}
-
-.text-footer{
-    /* background-color: rgb(177, 87, 169); */
-    width:50%;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-  
-   
-    
-    /* gap:1px; */
-}
-.footer-logo{
-    background-color: azure;
-    /* width: 100px; */
-    height: 25%;
-  
-   
-}
-.Xpace{
-    /* background-color: rgb(30, 185, 185); */
-    /* width: 100px; */
-    /* height: 40%; */
-    text-align: center;
-    color:white;
-    font-size: 2.3em;
-    
-}
-.Light-footer{
-    /* background-color: rgb(187, 29, 113); */
-    /* width: 100px; */
-    height: 25%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
-}
-.lightfooter-logo{
-    background-color: #b77449;
-    width:40%;
-    height: 100%;
-}
-.lightfooter-text{
-    /* background-color: #49b768; */
-    width:60%;
-    height: 100%;
-    color: white;
-    font-size: 1.3em;
-    /* text-align: center; */
-}
-.story-footer{
-    /* background-color: rgb(40, 187, 29); */
-    /* width: 100px; */
-    height: 20%;
-    font-size: 1.8em;
-   text-align: end;
-   color:white;
-   padding-top:10px;
-   padding-right:100px;
-}
-
-.Image-footer{
-    background-color:rgb(255, 255, 255);
-    width:50%;
-    height: 100%;
-    border-radius: 20px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
-    align-items: center;
-    margin-left: 50px;
-    background-image: url("../assets/pretty-young-fashion-sensual-woman-posing-white-wall_231208-6397-removebg-preview.png");
-   
-}
-
-.top-text{
-   /* background-color: rgb(22, 185, 185); */
-    /* height:70%; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    gap:3em;
-    margin-left:20px;
-    margin-right: 20px;
-}
-
- /* .text-footer{
-    display: flex;
-    flex-direction: row;
-    width:50%;
-}  */
-
-.logo {
-    width: 30px;
-    height: 49px;
-    border-radius: 20px;
-    background-image: url("../assets/grafana_logo_icon_145223.png");
-    margin: 25px;
-}
-
- /* .Text-Container {
-    margin: 80px 25px;
-    display: float;
-}  */
-
-.Text-Container span {
-    display: block;
-    margin: 0px;
-    color: white;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.Text-Container h1 {
-    display: block;
-    font-size: 5em;
-    margin-top: 20px;
-    color: white;
-    margin:0px;
-}
-
-.Text-Container p {
-    display: block;
-    font-size: .4em;
-    margin-top: 20px;
-    color: white;
-    margin:0px;
-    padding-top:6px;
-}
-.Learn-btn{
-    width: 120px;
-    height: 60px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    margin-bottom:10px;
-    margin-top:30px;
-
-} 
-/* .Image{
+ }
+ .container-left{
     height:100%;
-    background-repeat: no-repeat;
-    width:100%;
-    background-color: aqua;
-    background-image: url("../assets/pretty-young-fashion-sensual-woman-posing-white-wall_231208-6397-removebg-preview.png");
+    width:50%;
+    background-color: #525161;
+    border-radius: 10px;
+     
+ }
+ .container-right{
+    height:100%;
+    width:50%;
+    background-color: white;
+    border-radius: 10px;
+ }
+ .banner{
+    height:50%;
+    background-color: #d1d4ff;
+    border-radius: 10px;
+    /* background-image: url("../assets/smiling-girl.png");
+    background-size: cover; 
+   background-position: left; 
+   background-repeat: no-repeat;  */
+ }
+ .navbar{
     display: flex;
-  align-items: center;
-  justify-content: center;
-
-} */
-.side-card{
-    background-color: rgb(0, 0, 0);
-    width: 50%;
-    height:100px;
-    position: relative;
-    z-index: 1;
-    top:190px; 
-    right: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    height:20%;
+ }
+ .navbar button{
+    height: 40px;
+    width:120px;
     border-radius: 20px;
+    border:1px solid black;
+ }
+ .photo-text{
+    /* background-color: aquamarine; */
+    height:80%;
+    display: flex;
+    flex-direction: row;
+ }
+ .photo{
+   width:50%;
+   height: 100%;
+   background-image: url("../assets/smiling-girl.png");
+   background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+ }
+.collaborate {
+    padding-top: 20px;
+    justify-content: center;
 }
-.week{
+.collaborate p{
+    padding-left: 42px;
+    font-size: 13px;
+}
+.button{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align:center;
-    color:white;
-    font-size:26px;
-    padding-right: 70px;
+    margin-top: 5px;
+    padding-right: 60px;
 }
-.mini-side-card{
-    left:200px;
-    bottom:65px;
-    position: relative;
-    width: 70px;
-    height: 50%;
-    background-color: rgb(255, 249, 251);
+.button button{
+    font-size: 10px;
+    width: 60px;
+    height:20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ceff65;
+    gap: 10px 10px;
+}
+.containers{
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    background-color: beige;
+    gap: 10px;
+    margin-top: 5px;
+}
+.face{
+
+    height:100%;
+    background-color: #ceff65;
+    width:33.3%;
+    border-radius: 20px;
+    
+}
+.our-team{
+  
+    height:100%;
+    background-color: #08e1ab;
+    width:33.3%;
     border-radius: 20px;
 }
-.nine {
-    text-align: center;
-    margin-top: 2;
-   /* background-color: chartreuse; */
-   border-radius: 2px;
-   display: flex;
-   justify-content: center;
-    text-align:center;
-    font-size: 1.2em;
+.oliver{
+    height:100%;
+    background-color: #2c9b7f;
+    width:33.3%;
+    border-radius: 20px;
 }
-
-
-  /* .Footer{
-    display:flex;
-    flex-direction: row;
-    background-color: azure;
-    gap:10px;  } */
-
-
-  
-                                                 
-
-/* .Image-footer{
-    background-color: rgb(128, 13, 13);
-    border-radius: 20%;
-    height: 200px; 
-    width: 35%; 
-    }
-
-     */
-/* .Learn-btn{
-    margin-top:100px;
-} */
