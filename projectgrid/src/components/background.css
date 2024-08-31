@@ -24,13 +24,16 @@
  .container-right{
     height:100%;
     width:50%;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
+   
+
  }
  .banner{
     height:50%;
     background-color: #d1d4ff;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 5px black solid;
     /* background-image: url("../assets/smiling-girl.png");
     background-size: cover; 
    background-position: left; 
@@ -86,33 +89,130 @@
     border: none;
     background-color: #ceff65;
     gap: 10px 10px;
+    /* cursor: pointer; */
 }
+button{
+    cursor: pointer; 
+}
+button:hover{
+    animation: bounce 0.5s; 
+    background-image: linear-gradient(to right, #753b78, rgb(52, 123, 112));
+}
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 .containers{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     height: 25%;
-    background-color: beige;
-    gap: 10px;
-    margin-top: 5px;
+    /* background-color: beige; */
+    gap: 10px 10px;
+   
+    margin-top: 2px;
 }
 .face{
 
     height:100%;
-    background-color: #ceff65;
+    background-color: #eaeaec;
     width:33.3%;
     border-radius: 20px;
+    border: 5px black solid;
+    background-image: url("../assets/young-female-with-dark-hair-pleading-about-something-keeping-palms-up-looking-up-isolated-rosy-background-woman-begging-something-long-awaited_176532-10539.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     
 }
 .our-team{
-  
     height:100%;
-    background-color: #08e1ab;
+    background-color:#525161;
     width:33.3%;
     border-radius: 20px;
+    border: 5px black solid;
+    
 }
 .oliver{
     height:100%;
-    background-color: #2c9b7f;
+    background-color: #4e56d3;
     width:33.3%;
     border-radius: 20px;
+    border: 5px black solid;
+    /* position: absolute; */
+
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    margin-top: 2px;
+    /* background-color: #1850de; */
+    border-radius: 20px;
+    gap: 10px;
+}
+.footer-left{
+    border-radius: 20px;
+    width:60%;
+    background-color: #7a6061;
+    border: 5px black solid;
+}
+.footer-right{
+    border-radius: 20px;
+    width:40%;
+    background-color: #b77449;
+    border: 5px black solid;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 2em;
+    position: relative;
+}
+.team h6{
+    text-decoration: dashed underline #b77449 ;
+}
+.team:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 300%;
+        width: 0;
+        height: 0;
+        border: 23px solid transparent;
+        border-right-color:#525161 ;
+        border-left: 0;
+        margin-top: -23px;
+        margin-left: -23px;
+
+}
+.team span{
+    color:#b77449;
+}
+.lea{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.lea h6{
+    font-size: 1.5em;
+    color:white;
+    
+}
+.lea p{
+    color:white;
+    padding-right: 20px;
+}
+.oliver{
+    background-image: url("../assets/young-blonde-woman-with-yellow-sweater_273609-5541.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }

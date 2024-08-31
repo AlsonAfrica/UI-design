@@ -1,5 +1,6 @@
 import '../components/background.css'
 import { FaRegHandshake } from "react-icons/fa6";
+import { GoArrowUpRight } from "react-icons/go";
 
 const background = () => {
   return ( 
@@ -27,14 +28,23 @@ const background = () => {
             </div>
           </div>
         </div>
-        <div className='containers'>
+              <div className='containers'>
                 <div className='face'></div>
-                <div className='our-team'></div>
-                <div className='oliver'></div>
-
+                <div className='our-team'>
+                  <div className='team'><h6>Our <span>Team</span></h6></div>
+                  <div className='lea'><h6>Lea Herrera</h6>
+                  <p>UX Designer <GoArrowUpRight /></p>
+                  </div>
+                </div>
+                <div className='oliver'>
+                  <div className=""></div>
+                </div>
               </div>
-      </div>
-      
+              <div className='footer'>
+              <div className='footer-left'></div>
+              <div className='footer-right'></div>
+              </div>
+      </div>   
     </div>
    );
 }
