@@ -5,7 +5,9 @@ import { GoArrowUpRight } from "react-icons/go";
 const background = () => {
   return ( 
     <div className='wrapper'>
-      <div className='container-left'></div>
+      <div className='container-left'>
+        
+      </div>
       <div className='container-right'>
         <div className='banner'>
           <div className='navbar'>
@@ -37,11 +39,18 @@ const background = () => {
                   </div>
                 </div>
                 <div className='oliver'>
-                  <div className=""></div>
+                  <div className="oliver-text"><h6>Oliver Haller</h6></div>
+                  <div className='founder'><p>Co-Founder<GoArrowUpRight /></p></div>
                 </div>
               </div>
               <div className='footer'>
-              <div className='footer-left'></div>
+              <div className='footer-left'>
+                <div className='join'><h6>Join us if you<br/>want!</h6></div>
+                <div className='btn-learn'>
+                  <div><button>Join Now</button></div>
+                  <div><p>Learn How!<GoArrowUpRight /></p></div>
+                </div>
+              </div>
               <div className='footer-right'></div>
               </div>
       </div>   
