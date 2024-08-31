@@ -1,12 +1,46 @@
 import '../components/background.css'
 import { FaRegHandshake } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
+import { FcDoughnutChart } from "react-icons/fc";
+import { FaCalendarWeek } from "react-icons/fa6";
+import { FaLightbulb } from "react-icons/fa";
+import { GiSunbeams } from "react-icons/gi";
 
 const background = () => {
   return ( 
     <div className='wrapper'>
       <div className='container-left'>
-        
+        <div className='Xpace'><p> <FcDoughnutChart /> Xpace </p></div>
+        <div className='Team'><p> Team Together </p>
+        <h1>Bring Your <br/> team together. <br/> Right here.</h1>
+        <p>The quick brown fox jumps over <br/> the lazy dog.</p>
+        </div>
+        <div className="Learn-btn"><button>Learn how</button></div>
+        <div className="pic-xpace">
+          <div className="pic-x">
+            <div className='nine'>+9 %</div>
+          </div>
+          <div className='week'>
+              week 5 <FaCalendarWeek />
+            </div>
+          <div className="london">
+            <div className='logo'>
+            <GiSunbeams />
+            </div>
+            <div className='founded'><h6>We're Xpace - <br/> Founded in <br/> London</h6></div>
+            <div className='light-message'>
+            <div className='light'><FaLightbulb /></div>
+            <div className='message'>
+              <p>A short message that will bring you costumers into the world of photography</p>
+            </div>
+            </div>
+            <div className='learn-our-story'>
+              <p>learn Our story <GoArrowUpRight /></p>
+            </div>
+          </div>
+
+        </div>
+    
       </div>
       <div className='container-right'>
         <div className='banner'>
