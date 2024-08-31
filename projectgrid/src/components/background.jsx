@@ -7,6 +7,9 @@ import { FaLightbulb } from "react-icons/fa";
 import { GiSunbeams } from "react-icons/gi";
 
 const background = () => {
+  const handleClick =()=>{
+    console.log("button was clicked") // logs a message for every button click
+  }
   return ( 
     <div className='wrapper'>
       <div className='container-left'>
@@ -15,7 +18,7 @@ const background = () => {
         <h1>Bring Your <br/> team together. <br/> Right here.</h1>
         <p>The quick brown fox jumps over <br/> the lazy dog.</p>
         </div>
-        <div className="Learn-btn"><button>Learn how</button></div>
+        <div className="Learn-btn" onClick={handleClick}><button>Learn how</button></div>
         <div className="pic-xpace">
           <div className="pic-x">
             <div className='nine'>+9 %</div>
@@ -49,7 +52,7 @@ const background = () => {
             <p>Story</p>
             <p>Features</p>
             <p>Contact</p>
-            <button>Sign Up</button>
+            <button  onClick={handleClick}>Sign Up</button>
           </div>
           <div className='photo-text'>
             <div className='photo'></div>
@@ -59,7 +62,7 @@ const background = () => {
               <p>Get our free mobile application.</p>
               </div>
               <div className='button'>
-                  <button>Download</button>
+                  <button  onClick={handleClick}>Download</button>
               </div>
             </div>
           </div>
@@ -81,7 +84,7 @@ const background = () => {
               <div className='footer-left'>
                 <div className='join'><h6>Join us if you<br/>want!</h6></div>
                 <div className='btn-learn'>
-                  <div><button>Join Now</button></div>
+                  <div><button  onClick={handleClick}>Join Now</button></div>
                   <div><p>Learn How!<GoArrowUpRight /></p></div>
                 </div>
               </div>
