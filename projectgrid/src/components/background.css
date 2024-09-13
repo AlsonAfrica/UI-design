@@ -1,396 +1,170 @@
- /* view port reset */
- *{
-    padding:0;
-    margin:0;
+*{
     box-sizing: border-box;
- }
- /* b */
-
- .wrapper{
-    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
     height:100vh;
-    display: flex;
-    flex-direction: row;
-    padding:10px;
-    gap:10px;
- }
- .container-left{
-    height:100%;
-    width:50%;
-    background-color: #525161;
-    border-radius: 20px;
-    border: 5px black solid;
-     
- }
- .container-right{
-    height:100%;
-    width:50%;
-    /* background-color: white; */
-    border-radius: 10px;
-   
+    background-color: black;
+}
+.container>*{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    /* width:100%;
+    height:100%; */
+    border-radius:20px;
 
- }
- .banner{
-    height:50%;
+}
+.right-container {
+    display: grid;
+    grid-template-areas: 
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "body body body body"
+        "body body body body"
+        "footer footer footer footer"
+        "footer footer footer footer";
+    gap: 10px;
+    background-color: black;
+}
+.left-container{
+    background-color: #525161;
+}
+.hero {
     background-color: #d1d4ff;
+    grid-area: hero;
     border-radius: 20px;
-    border: 5px black solid;
-    /* background-image: url("../assets/smiling-girl.png");
-    background-size: cover; 
-   background-position: left; 
-   background-repeat: no-repeat;  */
- }
- .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 10px;
-    height:20%;
- }
- .navbar button{
-    height: 40px;
-    width:120px;
-    border-radius: 20px;
-    border:1px solid black;
- }
- .photo-text{
-    /* background-color: aquamarine; */
-    height:80%;
-    display: flex;
-    flex-direction: row;
- }
- .photo{
-   width:50%;
-   height: 100%;
-   background-image: url("../assets/smiling-girl.png");
-   background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
- }
-.collaborate {
-    padding-top: 20px;
-    justify-content: center;
-}
-.collaborate p{
-    padding-left: 42px;
-    font-size: 13px;
-}
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    padding-right: 60px;
-}
-.button button{
-    font-size: 10px;
-    width: 60px;
-    height:20px;
-    border-radius: 20px;
-    border: none;
-    background-color: #ceff65;
-    gap: 10px 10px;
-    /* cursor: pointer; */
-}
-button{
-    cursor: pointer; 
-}
-button:hover{
-    animation: bounce 0.5s; 
-    background-image: linear-gradient(to right, #753b78, rgb(52, 123, 112));
-}
-@keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-.containers{
-    display: flex;
-    /* flex-direction: row; */
-    height: 25%;
-    /* background-color: beige; */
-    gap: 10px 10px;
+    background-image: url("../assets/Eve.png");
+    background-repeat: none;
+    background-size: fill; 
+    background-repeat: no-repeat; 
     position: relative;
-   
-    margin-top: 2px;
+    /* border: 10px solid black; */
+}
+
+.body {
+    background-color: beige;
+    grid-area: body;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    /* padding:.3em; */
+    background-color: inherit;
+
 }
 .face{
-
+    background-color: #ebebed;
     height:100%;
-    background-color: #eaeaec;
-    width:33.3%;
-    border-radius: 20px;
-    border: 5px black solid;
-    background-image: url("../assets/young-female-with-dark-hair-pleading-about-something-keeping-palms-up-looking-up-isolated-rosy-background-woman-begging-something-long-awaited_176532-10539.jpg");
+    width: 33.33%;
+    border-radius: inherit;
+    background-image: url('../assets/young-female-with-dark-hair-pleading-about-something-keeping-palms-up-looking-up-isolated-rosy-background-woman-begging-something-long-awaited_176532-10539.jpg');
+    background-repeat: none;
     background-size: cover; 
-    background-position: center; 
     background-repeat: no-repeat; 
-    
 }
 .our-team{
+    background-color: #525161;
     height:100%;
-    background-color:#525161;
-    width:33.3%;
-    border-radius: 20px;
-    border: 5px black solid;
-    
+    width: 33.33%;
+    border-radius: inherit;
 }
 .oliver{
-    height:250px;
     background-color: #4e56d3;
-    width:33.3%;
-    border-radius: 20px;
-    border: 5px black solid;
-    left:420px;
-    bottom:1px;
-    z-index: 1;
+    height:45vh;
+    bottom:1%;
+    width: 32%;
     position: absolute;
-
-}
-.footer{
-    display: flex;
-    flex-direction: row;
-    height: 25%;
-    margin-top: 2px;
-    /* background-color: #1850de; */
+    right:0;
     border-radius: 20px;
-    gap: 10px;
-}
-.footer-left{
-    border-radius: 20px;
-    width:60%;
-    background-color: #7a6061;
-    border: 5px black solid;
-}
-.footer-right{
-    border-radius: 20px;
-    width:40%;
-    background-color: #b77449;
-    border: 5px black solid;
-}
-.team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 2em;
-    position: relative;
-}
-.team h6{
-    text-decoration: dashed underline #b77449 ;
-    border-width: 10px;
-}
-.team:after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 300%;
-        width: 0;
-        height: 0;
-        border: 23px solid transparent;
-        border-right-color:#525161 ;
-        border-left: 0;
-        margin-top: -23px;
-        margin-left: -23px;
-
-}
-.team span{
-    color:#b77449;
-}
-.lea{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-}
-.lea h6{
-    font-size: 1.5em;
-    color:white;
-    
-}
-.lea p{
-    color:white;
-    padding-right: 20px;
-}
-.oliver{
-    background-image: url("../assets/young-blonde-woman-with-yellow-sweater_273609-5541.jpg"); 
+    border: 10px solid black;
+    border-bottom: none;
+    background-image: url("../assets/oliver.png");
     background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    display: flex;
-    /* justify-content: flex-start; */
-    align-items: flex-end;
-    flex-direction: column;
-    color: white;
-    padding-right: 10px;
-    padding-top: 10px; 
-}
-.oliver-text{
-    font-size: 1.7em;
-}
-/* footer Containers */
-.join{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: right; 
+    background-repeat: no-repeat; 
     color:white;
-    margin-right: 100px;
-    margin-top: 20px;
-    font-size: 2em;
-  
+    padding-top: 10px;
+    padding-left: 50px;
+
 }
-.btn-learn{
+
+.footer {
+    background-color:inherit;
+    grid-area: footer;
+    border-radius: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 30px;
-    color: white;
+    /* padding: .3em; */
+    gap:10px;
 }
-.btn-learn button{
-      height:25px;
-      width:100px;
-      border-radius: 20px;
-      border: 2px solid rgb(0, 0, 0);
-      background-color: black;
-      color:white;
+
+.footer-1{
+    align-items: center;
+    width:100%;
+    background-color: #b77449;
+    border-radius: inherit;
 }
-.footer-right{
+.footer-2{
+    align-items: center;
+    width:100%;
+    height:100%;
+    background-color: #7a6061;
+    border-radius: inherit;
     background-image: url("../assets/orthodox-removebg-preview.png"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
 }
-/* Container Left Styling*/
-.Xpace{
-    height: 5%;
+.navbar{
+    display:flex;
     padding-top: 10px;
-    margin-left: 10px;
-    color: white;
+    justify-content: space-around;
+    font-size: .9em;
 }
-.Team{
-    margin-top:30px;
-    margin-left: 10px;
-    color:white;
-    height: 50%;
-    padding-top: 40px;
+.navbar button{
+    width:120px;
+    height:40px;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
 }
-.Team h1{
-    font-size: 3em;
+.collaborate{
+    padding:0.5em;
+    position: absolute;
+    top:25%;
+    right:36%;
+    border: dotted;
+    /* border-bottom: none;    
+    border-top: none; */
 }
-.Learn-btn{
-    margin-left: 10px;
+#everywhere{
+    padding-left: 100px;
+}
+.collaborate p{
+    font-size: 0.6em;
+    padding-left:150px;
+}
+.collaborate button{
     margin-top: 10px;
-    height: 5%;
-}
-.Learn-btn button{
-    width:80px;
-    height:30px;
-    border-radius: 25px;
-    border: 2px white solid;
-}
-.pic-xpace{
-    display: flex;
-    flex-direction: row;
-    /* background-color: #1101f1; */
-    height:28%;
-    margin-top: 20px;
-    border-radius: 20px;
-    gap:2px
-}
-.pic-x{
-    width:50%;
-    background-color: #ffffff;
-    background-image: url("../assets/pretty-young-fashion-sensual-woman-posing-white-wall_231208-6397-removebg-preview.png"); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    border-radius: 25px;
-    margin-left: 10px;
-    position: relative;
-}
-.week{
-    margin-top: 100px;
-    width:150px;
-    height:50px;
-    border-radius: 20px;
-    background-color: rgb(0, 0, 0);
-    z-index:1;
-    margin-right:40px;
-    position: absolute;
-    margin-left:5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-direction:column;
-}
-.nine{
-    display: flex;
-    justify-content: center;
-    background-color: #e6e6e9;
-    /* margin-top: 120px; */
-    z-index: 12;
-    position: absolute;
-    top:110px;
-    right:130px;
-    height:20px;
-    width:50px;
-    border-radius: 20px;
-}
-.london{
-    width:50%;
-    /* background-color: #ffffff; */
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
-.founded{
-    text-align: center;
-    font-size: 2em;
-}
-.logo{
-    text-align: center;
-    background-image: url("../assets/images-removebg-preview.png"); 
+    background-color: greenyellow;
+    height:40px;
+    width:90px;
+    border-radius: 50px;
+    border: none;
+   
     
 }
-.light-message{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-   
-}
-.light{
-    width:50%;
-    /* background-color: #525161; */
-    padding-left:90px;
-}
-.message p{
-    font-size: 0.7em;
-}
-.learn-our-story{
-    padding-left: 100px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.team span{
+    color:#b77448;
 }
 
-/* media query */
-@media only screen and (max-width: 600px) {
-    .wrapper {
-           flex-direction: column-reverse;
-           height: 200vh;
-    }
-    .container-left,.container-right{
-        width:100%;
-    }
-  }
