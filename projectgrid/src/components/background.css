@@ -14,11 +14,106 @@
 
 /* Containers-styling */
 .container-left{
-    background-color: antiquewhite;
+    display:flex;
+    flex-direction: column;
+    background-color: #525161;
     height:100%;
     width:100%;
     border-radius: 20px;
 }
+/* Left container children */
+.logo{
+   width:100%;
+   height:10%;
+   background-color: #525161;
+   border-radius: inherit;
+   padding:10px;
+   font-size: 20px;
+}
+.bring-text{
+    width:100%;
+    height:50%;
+    background-color: #525161;
+    border-radius: inherit;
+    padding:10px;
+    color:white;
+    
+}
+.bring-text h3{
+font-size: 2.4em;
+}
+.bring-text p{
+    margin-bottom: 10px;
+}
+.bring-text button{
+    height:40px;
+    width:90px;
+    border-radius: 20px;
+    border: none;
+}
+.photo-text{
+    width:100%;
+    height:40%;
+    background-color: #525161;
+    border-radius: inherit;
+}
+.photo-text{
+    display:flex;
+    gap:10px;
+}
+.photo{
+    width:50%;
+    height:100%;
+    background-color: #525161;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Xpace{
+   
+    width:50%;
+    height:100%;
+    background-color: #a1a3b6;
+    border-radius: inherit;
+}
+.photo-man{
+    height:90%;
+    width:70%;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url("../assets/man.png");
+    background-position: center; 
+    background-repeat: none;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    position:relative;
+}
+.week5{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:-10%;
+    top:70%;
+    width:60%;
+    height:22%;
+    border-radius: 10px;
+    background-color: black;
+}
+.nine-plus{
+    text-align: center;
+    position: absolute;
+    left:40%;
+    top:76%;
+    height:10%;
+    width:20%;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+/*  */
+
 .container-right{
     display: flex;
     flex-direction: column;
@@ -27,8 +122,11 @@
     width:100%;
     gap: 10px;
     border-radius: 20px;
-    
+
 }
+
+
+
 /* RightContainer Children */
 .hero{
     height:50%;
@@ -159,7 +257,7 @@
     font-size: 0.6rem;
 }
 .collaborate button{
-    width:100px;
+    width:80px;
     height:25px;
     margin-top: 20px;
     background-color: greenyellow;
