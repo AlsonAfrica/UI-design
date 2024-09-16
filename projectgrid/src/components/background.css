@@ -325,7 +325,7 @@ font-size: 2.4em;
     border: none;
 }
 .collaborate h2{
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 /* body styling */
 .oliver-text{
@@ -405,3 +405,67 @@ font-size: 2.4em;
         font-size: 13px;
     }
   }
+  
+
+  @media screen and (min-width: 1280px) {
+    .collaborate h2{
+        font-size: 2rem;
+    }
+    .collaborate p{
+        font-size: .9rem;
+    }
+    .collaborate button{
+        width:80px;
+        height:30px;
+        margin-top: 35px;
+     
+    }
+    .navbar{
+        font-size: 1.2rem;
+    }
+    .body-container3{
+        height:160%;
+    }
+    .body-container2{
+        line-height: 3;
+    }
+    .join-learn{
+        margin-top: 60px;
+    }
+    .join-text{
+        margin-top: 20px;
+    }
+    .socials-text{
+        margin-bottom: -10px;
+        font-size: 1.2rem;
+    }
+    .bring-text h3{
+        font-size: 4rem;
+    }
+    .text{
+        padding-top: 20px;
+        font-size: .7rem;
+    }
+    .xpace-text{
+        font-size: 2.2rem;
+    }
+    .nine-plus{
+        text-align: center;
+        padding: 5px;
+    }
+
+  }
+
+  @media screen and (max-width:414px){
+    .body-container3{
+        height:150%;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .body-container2:after{
+        top:50%;
+        width: 5px;
+    }
+  }
+  

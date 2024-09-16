@@ -1,17 +1,16 @@
 // src/components/Popup.js
 import React from 'react';
+import './popup.css';
 
-
-const Popup = ({ togglePopup }) => {
+const Popup = ({ content, onClose }) => {
   return (
-    <div className="popup">
-      <div className="popup-inner">
-        <h2>Learn How</h2>
-        <p>Here’s how we bring teams together...</p>
-        <button onClick={togglePopup}>Close</button>
+    <div className="popup-overlay">
+      <div className="popup-content">
+        <button className="close-button" onClick={onClose}>X</button>
+        <div>{content}</div>
       </div>
     </div>
   );
-};
+}
 
 export default Popup;
