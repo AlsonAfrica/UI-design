@@ -9,6 +9,10 @@ The Xpace Landing Page is a modern and visually appealing web page designed to i
 * Interactive Elements: Buttons such as "Learn how", "Join Now", and "Download" encourage user engagement ( when pressed they display a message on a console).
 * Branding: The page prominently displays the Xpace logo and tagline, "We're Xpace—Founded in London."
 
+# Interphase
+![image](https://github.com/user-attachments/assets/311ddb41-898c-489b-91e3-767d62047891)
+
+
 ## Development
 To replicate or use this design:
 
