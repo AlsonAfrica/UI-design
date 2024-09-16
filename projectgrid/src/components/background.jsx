@@ -6,6 +6,9 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaDotCircle } from "react-icons/fa";
 import Oliver from '../assets/oliver.png'
 import Man from "../assets/man.png"
+import { GiLightBulb } from "react-icons/gi";
+import Popup from './popup';
+
 
 const background = () => {
   
@@ -31,7 +34,22 @@ const background = () => {
             <div className='nine-plus'>+9</div>
             </div>
           </div>
-          <div className="Xpace"></div>
+          <div className="Xpace">
+            <div className="Xpace-container1">
+              <div className="photo-logo"></div>
+              <div className="xpace-text"><h5>We're Xpace-- <br/> Founded in <br/> London</h5></div>
+              <div className='light-text'>
+                <div className="light"><GiLightBulb /></div>
+                <div className="text">
+                  <p> A short message that will bring <br/> your costumers into the world <br/> of your imagination</p>
+                </div>
+              </div>
+              <div className="learn-our-story">
+              <hr style={{ width: '100%', textAlign: 'left', marginLeft: 0, backgroundColor:"#494955"}} />
+                  <p>Learn our story <GoArrowUpRight color="green"/></p>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
       
